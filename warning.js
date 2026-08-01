@@ -1,6 +1,6 @@
 (function () {
   "use strict";
- 
+
   const CORRECT_PASSWORD = "indiandevelopersandhackers9823";
 
   // 1. Right-Click & Inspect Shortcuts Protection
@@ -214,17 +214,11 @@
   `;
   document.head.appendChild(style);
 
-  // Hide Application Element by Default
+  // Hide Application Element by Default (Always hidden on fresh load/refresh)
   const appElement = document.getElementById('app');
   if (appElement) appElement.style.display = 'none';
 
-  // Check Session Storage
-  if (sessionStorage.getItem('rc_access_unlocked') === 'true') {
-    if (appElement) appElement.style.display = '';
-    return;
-  }
-
-  // 3. Step 1: Render Official Legal Letter with Mandatory Checkbox
+  // 3. Step 1: Render Official Legal Letter with Mandatory Checkbox (Every single time)
   function renderLegalLetter() {
     const backdrop = document.createElement('div');
     backdrop.id = 'rc-legal-backdrop';
@@ -332,7 +326,6 @@
     const verifyPassword = () => {
       const entered = input.value.trim();
       if (entered === CORRECT_PASSWORD) {
-        sessionStorage.setItem('rc_access_unlocked', 'true');
         backdrop.remove();
         if (appElement) appElement.style.display = '';
       } else {
