@@ -27,199 +27,209 @@
   const style = document.createElement('style');
   style.textContent = `
     #rc-legal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: #0d1210;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      font-family: 'Times New Roman', Times, serif;
-      color: #111;
-      box-sizing: border-box;
-      overflow-y: auto;
+      position: fixed !important;
+      inset: 0 !important;
+      background: #0d1210 !important;
+      z-index: 99999999 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 20px !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      color: #111 !important;
+      box-sizing: border-box !important;
+      overflow-y: auto !important;
     }
 
     .rc-letter-container {
-      background: #ffffff;
-      border: 2px solid #2b3a32;
-      padding: 40px;
-      width: 100%;
-      max-width: 680px;
-      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
-      position: relative;
-      box-sizing: border-box;
-      margin: auto;
+      background: #ffffff !important;
+      border: 2px solid #2b3a32 !important;
+      padding: 40px !important;
+      width: 100% !important;
+      max-width: 680px !important;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8) !important;
+      position: relative !important;
+      box-sizing: border-box !important;
+      margin: auto !important;
     }
 
     .rc-header {
-      text-align: center;
-      border-bottom: 3px double #2b3a32;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
+      text-align: center !important;
+      border-bottom: 3px double #2b3a32 !important;
+      padding-bottom: 20px !important;
+      margin-bottom: 20px !important;
     }
 
     .rc-org-title {
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #0b2319;
+      font-size: 22px !important;
+      font-weight: bold !important;
+      letter-spacing: 2px !important;
+      text-transform: uppercase !important;
+      color: #0b2319 !important;
     }
 
     .rc-org-subtitle {
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #435b50;
-      margin-top: 6px;
-      font-family: Arial, sans-serif;
+      font-size: 12px !important;
+      font-weight: bold !important;
+      letter-spacing: 1.5px !important;
+      text-transform: uppercase !important;
+      color: #435b50 !important;
+      margin-top: 6px !important;
+      font-family: Arial, sans-serif !important;
     }
 
     .rc-meta-table {
-      width: 100%;
-      margin-bottom: 20px;
-      font-size: 12px;
-      font-family: Arial, sans-serif;
-      border-collapse: collapse;
+      width: 100% !important;
+      margin-bottom: 20px !important;
+      font-size: 12px !important;
+      font-family: Arial, sans-serif !important;
+      border-collapse: collapse !important;
     }
 
     .rc-meta-table td {
-      padding: 3px 0;
-      color: #333;
+      padding: 3px 0 !important;
+      color: #333 !important;
     }
 
     .rc-subject-line {
-      font-weight: bold;
-      text-align: center;
-      font-size: 14px;
-      text-decoration: underline;
-      margin: 18px 0;
-      text-transform: uppercase;
-      color: #000;
+      font-weight: bold !important;
+      text-align: center !important;
+      font-size: 14px !important;
+      text-decoration: underline !important;
+      margin: 18px 0 !important;
+      text-transform: uppercase !important;
+      color: #000 !important;
     }
 
     .rc-body-content {
-      font-size: 14px;
-      text-align: justify;
-      margin-bottom: 20px;
-      color: #222;
-      line-height: 1.6;
+      font-size: 14px !important;
+      text-align: justify !important;
+      margin-bottom: 20px !important;
+      color: #222 !important;
+      line-height: 1.6 !important;
     }
 
     .rc-clause-box {
-      background: #f1f5f3;
-      border-left: 4px solid #c9302c;
-      padding: 12px 16px;
-      margin: 12px 0;
-      font-family: Arial, sans-serif;
-      font-size: 12.5px;
-      color: #333;
+      background: #f1f5f3 !important;
+      border-left: 4px solid #c9302c !important;
+      padding: 12px 16px !important;
+      margin: 12px 0 !important;
+      font-family: Arial, sans-serif !important;
+      font-size: 12.5px !important;
+      color: #333 !important;
     }
 
     .rc-clause-box.auth {
-      border-left-color: #2e8b57;
+      border-left-color: #2e8b57 !important;
     }
 
     .rc-checkbox-group {
-      margin: 20px 0 15px 0;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      cursor: pointer;
-      user-select: none;
-      color: #222;
+      margin: 20px 0 15px 0 !important;
+      font-family: Arial, sans-serif !important;
+      font-size: 13px !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 10px !important;
+      cursor: pointer !important;
+      user-select: none !important;
+      color: #222 !important;
     }
 
     .rc-checkbox-group input {
-      margin-top: 2px;
-      width: 16px;
-      height: 16px;
-      cursor: pointer;
+      margin-top: 2px !important;
+      width: 16px !important;
+      height: 16px !important;
+      cursor: pointer !important;
     }
 
     .rc-action-btn {
-      font-family: Arial, sans-serif;
-      width: 100%;
-      padding: 13px;
-      background: #1b3b2b;
-      color: #ffffff;
-      border: none;
-      border-radius: 3px;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: background 0.2s;
+      font-family: Arial, sans-serif !important;
+      width: 100% !important;
+      padding: 13px !important;
+      background: #1b3b2b !important;
+      color: #ffffff !important;
+      border: none !important;
+      border-radius: 3px !important;
+      font-size: 13px !important;
+      font-weight: bold !important;
+      letter-spacing: 1px !important;
+      text-transform: uppercase !important;
+      cursor: pointer !important;
+      transition: background 0.2s !important;
     }
 
     .rc-action-btn:disabled {
-      background: #8fa39a;
-      cursor: not-allowed;
+      background: #8fa39a !important;
+      cursor: not-allowed !important;
     }
 
     .rc-action-btn:not(:disabled):hover {
-      background: #2b5640;
+      background: #2b5640 !important;
     }
 
     .rc-legal-footer {
-      margin-top: 25px;
-      border-top: 1px solid #ccc;
-      padding-top: 12px;
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      color: #666;
-      display: flex;
-      justify-content: space-between;
+      margin-top: 25px !important;
+      border-top: 1px solid #ccc !important;
+      padding-top: 12px !important;
+      font-family: Arial, sans-serif !important;
+      font-size: 11px !important;
+      color: #666 !important;
+      display: flex !important;
+      justify-content: space-between !important;
     }
 
     .rc-pass-card {
-      max-width: 420px;
-      text-align: center;
-      padding: 35px;
+      max-width: 420px !important;
+      text-align: center !important;
+      padding: 35px !important;
     }
 
     .rc-pass-input {
-      font-family: Arial, sans-serif;
-      width: 100%;
-      background: #f9f9f9;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      padding: 12px;
-      font-size: 13px;
-      color: #000;
-      outline: none;
-      box-sizing: border-box;
-      margin-top: 8px;
+      font-family: Arial, sans-serif !important;
+      width: 100% !important;
+      background: #f9f9f9 !important;
+      border: 1px solid #ccc !important;
+      border-radius: 3px !important;
+      padding: 12px !important;
+      font-size: 13px !important;
+      color: #000 !important;
+      outline: none !important;
+      box-sizing: border-box !important;
+      margin-top: 8px !important;
     }
 
     .rc-pass-input:focus {
-      border-color: #1b3b2b;
+      border-color: #1b3b2b !important;
     }
 
     .rc-pass-err {
-      font-family: Arial, sans-serif;
-      color: #c9302c;
-      font-size: 11.5px;
-      font-weight: bold;
-      display: none;
-      margin-top: 6px;
-      text-align: left;
+      font-family: Arial, sans-serif !important;
+      color: #c9302c !important;
+      font-size: 11.5px !important;
+      font-weight: bold !important;
+      display: none !important;
+      margin-top: 6px !important;
+      text-align: left !important;
     }
   `;
   document.head.appendChild(style);
 
-  // Hide Application Element by Default (Always hidden on fresh load/refresh)
-  const appElement = document.getElementById('app');
-  if (appElement) appElement.style.display = 'none';
+  let isUnlocked = false;
 
-  // 3. Step 1: Render Official Legal Letter with Mandatory Checkbox (Every single time)
+  // Strict enforcement: Continuously lock app element until verified
+  function enforceLockdown() {
+    const appElement = document.getElementById('app');
+    if (appElement && !isUnlocked) {
+      appElement.style.setProperty('display', 'none', 'important');
+    }
+  }
+
+  setInterval(enforceLockdown, 50);
+
+  // 3. Step 1: Render Official Legal Letter with Mandatory Checkbox
   function renderLegalLetter() {
+    if (document.getElementById('rc-legal-backdrop')) return;
+
     const backdrop = document.createElement('div');
     backdrop.id = 'rc-legal-backdrop';
 
@@ -295,6 +305,8 @@
 
   // 4. Step 2: Render Password Gate
   function renderPasswordGate() {
+    if (document.getElementById('rc-legal-backdrop')) return;
+
     const backdrop = document.createElement('div');
     backdrop.id = 'rc-legal-backdrop';
 
@@ -326,8 +338,10 @@
     const verifyPassword = () => {
       const entered = input.value.trim();
       if (entered === CORRECT_PASSWORD) {
+        isUnlocked = true;
         backdrop.remove();
-        if (appElement) appElement.style.display = '';
+        const appElement = document.getElementById('app');
+        if (appElement) appElement.style.removeProperty('display');
       } else {
         errText.style.display = 'block';
         input.value = '';
