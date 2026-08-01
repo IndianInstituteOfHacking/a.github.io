@@ -2,7 +2,7 @@
   "use strict";
 
   const CORRECT_PASSWORD = "indiandevelopersandhackers9823";
-
+ 
   // 1. Right-Click & Inspect Shortcuts Protection
   document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
